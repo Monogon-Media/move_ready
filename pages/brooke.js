@@ -1,6 +1,22 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { Disclosure } from '@headlessui/react'
+
 import styles from '../styles/Home.module.css'
+
+
+function MyDisclosure() {
+    return (
+      <Disclosure>
+        <Disclosure.Button className="py-2">
+          Is team pricing available?
+        </Disclosure.Button>
+        <Disclosure.Panel className="text-yellow-500">
+          Yes! You can purchase a license that you can share with your entire
+          team.
+        </Disclosure.Panel>
+      </Disclosure>
+    )
+}
 
 export default function Brooke() {
   return (
@@ -15,6 +31,8 @@ export default function Brooke() {
         <h1 className={styles.title}>
           Brooke's Page <a href="./">Home</a>
         </h1>
+
+        <MyDisclosure/>
 
       </main>
 

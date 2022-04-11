@@ -29,14 +29,13 @@
 }
 
 .title a {
-  color: #0070f3;
-  text-decoration: none;
+  @apply text-blue-600 no-underline;
 }
 
 .title a:hover,
 .title a:focus,
 .title a:active {
-  text-decoration: underline;
+  @apply no-underline;
 }
 
 .title {
