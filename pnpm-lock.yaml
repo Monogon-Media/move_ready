@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@headlessui/react': ^1.5.0
   eslint: 8.13.0
   eslint-config-next: 12.1.4
   next: 12.1.4
@@ -8,6 +9,7 @@ specifiers:
   react-dom: 18.0.0
 
 dependencies:
+  '@headlessui/react': 1.5.0_react-dom@18.0.0+react@18.0.0
   next: 12.1.4_react-dom@18.0.0+react@18.0.0
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
@@ -49,6 +51,17 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@headlessui/react/1.5.0_react-dom@18.0.0+react@18.0.0:
+    resolution: {integrity: sha512-aaRnYxBb3MU2FNJf3Ut9RMTUqqU3as0aI1lQhgo2n9Fa67wRu14iOGqx93xB+uMNVfNwZ5B3y/Ndm7qZGuFeMQ==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+    dev: false
 
   /@humanwhocodes/config-array/0.9.5:
     resolution: {integrity: sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw==}
