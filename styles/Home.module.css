@@ -15,7 +15,7 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  padding: 1rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
@@ -27,6 +27,16 @@
   align-items: center;
   flex-grow: 1;
 }
+
+.footer span {
+  @apply mr-1 text-lg font-semibold text-purple-900;
+} /*Items like this may be better off with an id to specify its styles*/
+
+/*OR, use a 'container' approach, where every component has a highest level element, that is
+      its 'container'. You can add a class to that container, and then use the ".component div {}" 
+      method to target all of it's constituents'*/
+
+/*In any case, we need a 'css-interface' for each component. So that styles can be extended */
 
 .title a {
   @apply text-blue-600 no-underline;
