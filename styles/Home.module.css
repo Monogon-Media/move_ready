@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  background-color: white;
 }
 
 .main {
@@ -10,6 +11,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /*@apply  bg-gradient-to-b from-indigo-600 to-fuchsia-700 to-orange-500 text-white px-2;*/
+  @apply bg-gradient-to-b from-indigo-600 via-red-500 to-orange-400
 }
 
 .footer {
@@ -26,10 +29,11 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  @apply max-w-fit  text-purple-600 scale-100 hover:scale-125;
 }
 
 .title a {
-  @apply text-blue-600 no-underline;
+  @apply text-orange-400 no-underline;
 }
 
 .title a:hover,
@@ -100,11 +104,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {

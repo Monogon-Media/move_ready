@@ -1,22 +1,6 @@
 import Head from 'next/head'
-import { Disclosure } from '@headlessui/react'
-
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
-
-function MyDisclosure() {
-    return (
-      <Disclosure>
-        <Disclosure.Button className="py-2">
-          Is team pricing available?
-        </Disclosure.Button>
-        <Disclosure.Panel className="text-yellow-500">
-          Yes! You can purchase a license that you can share with your entire
-          team.
-        </Disclosure.Panel>
-      </Disclosure>
-    )
-}
 
 export default function Brooke() {
   return (
@@ -32,7 +16,7 @@ export default function Brooke() {
           Brooke's Page <a href="./">Home</a>
         </h1>
 
-        <MyDisclosure/>
+
 
       </main>
 
@@ -42,7 +26,16 @@ export default function Brooke() {
           target="_blank"
           rel="noopener noreferrer"
         >
-            Home
+          <span class="mr-1 text-purple-600 text-xl font-semibold bg-clip-text hover:text-transparent hover:bg-gradient-to-br from-indigo-600 via-red-500 to-orange-400">
+            MoveReady
+          </span>
+          <Image
+            class=""
+            src="/favicon-32x32.png"
+            alt="MR Logo" 
+            height={25}
+            width={25}
+          />
         </a>
       </footer>
     </div>
